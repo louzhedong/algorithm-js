@@ -36,7 +36,7 @@ var root = new Node(array[0]);
 generateBST(root, array);
 
 
-// 中序遍历
+// 先序遍历
 function preorderSearch(root) {
   var array = [];
 
