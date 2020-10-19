@@ -54,4 +54,19 @@ function max_heap(array) {
 const array = [79, 66, 43, 83, 30, 87, 38, 55, 91, 72, 49, 9];
 console.log(max_heap(array));
 
+/**
+ * 每次取出最大的元素，将最后的元素放置到根的位置，然后做下沉动作
+ */
 const result = [];
+
+while(array.length > 0 ) {
+  const maxItem = array.shift();
+  result.push(maxItem);
+  if (array.length > 0) {
+    array.unshift(array[array.length - 1]);
+    array.pop();
+    sink(array, 0);
+  }
+}
+
+console.log(result);
