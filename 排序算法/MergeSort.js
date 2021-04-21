@@ -1,10 +1,17 @@
+/*
+ * @Author: louzhedong
+ * @Date: 2020-01-04 09:50:10
+ * @LastEditors: louzhedong
+ * @LastEditTime: 2021-03-10 13:50:48
+ * @Description: 描述一下咯
+ */
 /**
  * 归并排序
  * @param {*} array 
  */
 function MergeSort(array) {
   var length = array.length;
-  var result = _sort(array, 0, length - 1);
+  _sort(array, 0, length - 1);
 }
 
 function _sort(array, left, right) {
